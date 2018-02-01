@@ -1,0 +1,23 @@
+.intro {
+	background-image: "/images/introImage.jpg";
+	height: 100%;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about {
+	background-color: white;
+	height: 70%;
+}
+
+.CV {
+	background-color: grey;
+	height: 100%;
+}
+
+.contact {
+	background-color: white;
+	height: 40%;
+}
