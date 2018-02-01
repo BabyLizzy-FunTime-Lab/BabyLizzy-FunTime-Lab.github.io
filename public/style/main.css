@@ -1,6 +1,12 @@
+/*@font-face {
+    font-family: StarTrekFont;
+    src: url("../font/Roddenberry.ttf");
+}*/
+
 html, body {
 	margin: 0;
     padding: 0;
+    /*font-family: "StarTrekFont","Comis Sans MS", cursive, sans-serif;*/
 }
 
 .intro {
@@ -10,6 +16,22 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.introMessage {
+	position: absolute;
+	top: 40vh;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+.hi {
+    font-size: 5vw;
+}
+
+.myName {
+    font-size: 10vw;
 }
 
 .about {
