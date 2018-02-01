@@ -27,11 +27,12 @@ html, body {
 }
 
 .hi {
-    font-size: 5vw;
+    font-size: 3.5vw;
+    font-style: italic;
 }
 
 .myName {
-    font-size: 10vw;
+    font-size: 9vw;
 }
 
 .about {
