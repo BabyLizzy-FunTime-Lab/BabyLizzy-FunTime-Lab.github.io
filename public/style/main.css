@@ -26,12 +26,12 @@ html, body {
 	color: white;
 }
 
-.hi {
+#introMessage-hi {
     font-size: 3.5vw;
     font-style: italic;
 }
 
-.myName {
+#introMessage-myName {
     font-size: 9vw;
 }
 
