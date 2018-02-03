@@ -9,7 +9,15 @@ html, body {
     /*font-family: "StarTrekFont","Comis Sans MS", cursive, sans-serif;*/
 }
 
-.intro {
+.clear {
+	clear: both;
+}
+
+.container {
+	text-align: center;
+}
+
+.container.intro {
 	background-image: url("../images/introImage.jpg");
 	height: 100%;
 	background-attachment: fixed;
@@ -22,7 +30,6 @@ html, body {
 	position: absolute;
 	top: 40vh;
 	width: 100%;
-	text-align: center;
 	color: white;
 }
 
@@ -35,17 +42,18 @@ html, body {
     font-size: 9vw;
 }
 
-.about {
-	background-color: white;
+.container.about {
+	background-color: #eee;
 	height: 70%;
+	text-align: center;
 }
 
-.CV {
-	background-color: grey;
+.container.projects {
+	background-color: #fff;
 	height: 100%;
 }
 
-.contact {
-	background-color: white;
+.container.contact {
+	background-color: peru;
 	height: 40%;
 }
