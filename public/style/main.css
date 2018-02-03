@@ -13,6 +13,8 @@ html, body {
 	clear: both;
 }
 
+/*Text is always centerd unless 
+told otherwise.*/
 .container {
 	text-align: center;
 }
@@ -45,7 +47,6 @@ html, body {
 .container.about {
 	background-color: #eee;
 	height: 70%;
-	text-align: center;
 }
 
 .container.projects {
