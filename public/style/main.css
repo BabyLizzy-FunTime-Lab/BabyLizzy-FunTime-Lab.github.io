@@ -3,11 +3,11 @@
     src: url("../font/Roddenberry.ttf");
 }*/
 
-html, body {
+/*html, body {
 	margin: 0;
     padding: 0;
-    /*font-family: "StarTrekFont","Comis Sans MS", cursive, sans-serif;*/
-}
+    font-family: "StarTrekFont","Comis Sans MS", cursive, sans-serif;
+}*/
 
 .clear {
 	clear: both;
@@ -15,11 +15,11 @@ html, body {
 
 /*Text is always centerd unless 
 told otherwise.*/
-.container {
+.container-fluid {
 	text-align: center;
 }
 
-.container.intro {
+.container-fluid.intro {
 	background-image: url("../images/introImage.jpg");
 	height: 100%;
 	background-attachment: fixed;
@@ -45,24 +45,24 @@ told otherwise.*/
     font-size: 9vw;
 }
 
-.container.about {
+.container-fluid.about {
 	background-color: #eee;
 }
 
-#about-header {
+/*#about-header {
 	font-size: 3vw;
 }
 
 #about-body {
 	font-size: 2vw;
-}
+}*/
 
-.container.projects {
+.container-fluid.projects {
 	background-color: #fff;
 	height: 100%;
 }
 
-.container.contact {
+.container-fluid.contact {
 	background-color: peru;
 	height: 40%;
 }
