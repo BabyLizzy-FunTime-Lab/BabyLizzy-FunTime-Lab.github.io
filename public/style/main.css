@@ -37,6 +37,7 @@ told otherwise.*/
 
 #introMessage-hi {
     font-size: 3.5vw;
+
     font-style: italic;
 }
 
@@ -46,7 +47,14 @@ told otherwise.*/
 
 .container.about {
 	background-color: #eee;
-	height: 70%;
+}
+
+#about-header {
+	font-size: 3vw;
+}
+
+#about-body {
+	font-size: 2vw;
 }
 
 .container.projects {
