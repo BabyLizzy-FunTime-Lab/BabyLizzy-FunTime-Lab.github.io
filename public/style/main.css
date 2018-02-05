@@ -21,7 +21,7 @@ told otherwise.*/
 
 .container-fluid.intro {
 	background-image: url("../images/introImage.jpg");
-	height: 100vh;
+	height: 100%;
 	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
