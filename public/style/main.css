@@ -21,7 +21,7 @@ told otherwise.*/
 
 .container-fluid.intro {
 	background-image: url("../images/introImage.jpg");
-	height: 100%;
+	height: 100vh;
 	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,12 +37,12 @@ told otherwise.*/
 
 #introMessage-hi {
     font-size: 3.5vw;
-
     font-style: italic;
 }
 
 #introMessage-myName {
     font-size: 9vw;
+    line-height: 1;
 }
 
 .container-fluid.about {
