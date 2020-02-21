@@ -66,3 +66,45 @@ told otherwise.*/
 	background-color: peru;
 	height: 40%;
 }
+.projects-body {
+	background-color: grey;
+}
+.site--header {
+	background-color: #FF7500;
+	border: 1px solid grey;
+}
+.site--header nav {
+	background-color: orange;
+	border: 1px solid orange;
+}
+.site--header h1 {
+	margin: .2em .4em .2em .3em;
+}
+.site--header h2 {
+	margin: .1em .4em .1em .4em;
+}
+.site--header ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.site--header a {
+	display: block;
+	padding: .5em;
+	font-size: 1.2em;
+	font-family: sans-serif;
+	font-weight: 700;
+	color: rgb(50,100,150);
+	text-shadow: 0 1px 1px rgba(255,255,255,.8);
+	text-decoration: none;
+	transition: all .5s ease-in-out .05s;
+}
+.site--header a:hover {
+	background-color: rgb(50,100,150);
+	color: white;
+	text-shadow: 0 1px 1px rgba(0,0,0,.8);
+}
+.rit--container {
+	background-color: lightgrey;
+}
