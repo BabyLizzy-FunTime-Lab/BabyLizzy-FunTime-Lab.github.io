@@ -16,7 +16,7 @@
 /*Text is always centerd unless 
 told otherwise.*/
 .container-fluid {
-	text-align: center;
+	/*text-align: center;*/
 }
 
 .container-fluid.intro {
