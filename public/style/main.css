@@ -72,6 +72,7 @@ told otherwise.*/
 .site--header {
 	background-color: #FF7500;
 	border: 1px solid grey;
+	z-index: -1;
 }
 .site--header nav {
 	background-color: orange;
@@ -107,4 +108,55 @@ told otherwise.*/
 }
 .rit--container {
 	background-color: lightgrey;
+}
+:root {
+	/*kleuren*/
+	--kleur-snow: rgb(255, 250, 250);
+	--kleur-lichtzwart: hsl(0, 0%, 15%);
+	--kleur-lichtgrijs: rgb(112, 112, 110);
+	--kleur-schaduw: rgba(0, 0, 0, 0.49);
+	--kleur-menu-highlight: rgba(105, 105, 105, 0.9);
+	--kleur-doorzichtig-lichtgrijs: rgba(252, 252, 250, 0.6);
+	--kleur-doorzichtig-lichtgrijs-1: rgba(252, 252, 250, 0.5);
+	/*foto's*/
+	--logo--horns-
+}
+.header__logo {
+	height: 3em;
+	background-color: lightgreen;
+
+}
+.header__nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	z-index: 10;
+}
+.header__nav > ul {
+	height: 2em;
+}
+.header__nav li {
+	flex: 1 1 33%;
+}
+.header__nav ul ul {
+	display: none;
+}
+.header__nav a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	padding: .5em 0 .5em 0;
+	background-color: var( --kleur-snow );
+
+}
+.header__nav a:hover {
+	background-color: var( --kleur-menu-highlight );
+	color: white;
+	transition: all ease-in-out 0.5s;
+}
+.header__nav li:hover ul {
+	display: flex;
+	flex-flow: column;
 }
