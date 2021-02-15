@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<title>Contact</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<meta name="description" content="eindopdracht HTML5 CSS3">
+	<meta name="keywords" content="eindopdracht,HTML5,CSS3">
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA292Zn7wIH3820ejWDBQz8ezz-ySUay4&callback=initMap" async defer></script>
+	<script src="../js/main.js"></script>
+</head>
+<body>
+	<header class="header--container">
+		<div class="header--home">
+			<div id="header__logo" class="header__logo">
+				<a href="../index.html"><h1>Gitaren</h1></a>
+			</div>
+			<nav class="header__nav pc--nav">
+				<ul class="header__navitems">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../index.html#intro">Intro</a></li>
+					<li id="typenMenuLijst"><a href="contact.hmtl">Gitaar Typen</a>
+						<ul>
+							<li><a href="solid_body.html">Solid Body</a></li>
+							<li><a href="semi_hollow.html">Semi Hollow</a></li>
+							<li><a href="hollow_body.html">Hollow Body</a></li>
+						</ul>
+					</li>
+					<li><a href="#media">Media</a></li>
+					<li class="active-page"><a href="contact.html">Contact</a></li>	
+				</ul>
+			</nav>
+		</div>	
+	</header>
+	<nav class="header__nav mobiel--nav">
+		<ul class="header__navitems">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../index.html#intro">Intro</a></li>
+			<li><a href="../index.html#media">Media</a></li>
+			<li class="active-page"><a href="contact.html">Contact</a></li>
+			<li id="typeSolid"><a href="solid_body.html">Solid Body</a></li>
+			<li id="typeSemi"><a href="semi_hollow.html">Semi Hollow</a></li>
+			<li id="typeHollow"><a href="hollow_body.html">Hollow Body</a></li>				
+		</ul>
+	</nav>
+	<main>
+		<article class="maps--container">
+			<header class="maps__titel">
+				<h2>Vind ons</h2>
+				<p>
+					Kom maar lekker langs voor meer info over Gitaren en een beetje frise lucht.
+				</p>
+			</header>
+			<div id="map" class="maps__kaart"></div>
+		</article>
+		<article class="formulier--container">
+			<header class="formulier__titel">
+				<h2>Stuur ons je Gitaar vragen!!</h2>
+				<p>We zullen zo snel mogelijk antwoorden.</p>
+			</header>
+			<form class="formulier__velden" id="formulier__velden" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post" enctype="multipart/form-data" target="blank">
+				<div class="formulier__naam">
+					<label for="naam">Naam:</label>
+					<input type="text" name="naam" id="naam" maxlength="30" required>
+				</div>
+				<div class="formulier__email">
+					<label for="email">E-mail:</label>
+					<input type="email" name="email" id="email" maxlength="40" placeholder="jouw-email@hier.com" required>
+				</div>
+				<div class="formulier__telefoon">
+					<label for="telefoon">Telefoon <small>(niet verplicht)</small>:</label>
+					<input type="tel" name="telefoon" id="telefoon" maxlength="20" placeholder="06 123 45678">
+				</div>
+				<div class="formulier__vragen">
+					<label for="vragen">Uw vragen:</label>
+					<textarea name="vragen" id="vragen" rows="5" maxlength="200" placeholder="Maximaal 200 characters." required></textarea>
+				</div>
+				<button class="formulier__button">Verzend</button>
+			</form>
+		</article>
+	</main>
+	<footer class="footer--container">
+		<div class="footer__bericht">
+			<div class="footer__tekst">
+				<h2>Bedankt voor uw bezoek!!</h2>
+				<p>
+					Bekijk graag ook de andere paginas. Er gaat nog veel meer Gitaar info bij komen. Mijn facebook pagina is nog niet beschikbaar.
+				</p>
+			</div>
+			<div class="footer__icons">
+				<h3>Volg mij op:</h3>
+				<a class="footer__facebook" href="https://www.facebook.com/" target="blank"></a>
+				<a class="footer__linkedin" href="https://www.linkedin.com/in/jos%C3%A9-luis-rasmussen-garcia/" target="blank"></a>
+				<a class="footer__youtube" href="https://www.youtube.com/user/darthporkius/" target="blank"></a>
+			</div>
+		</div>
+		<div class="footer__beeld"></div>
+	</footer>
+</body>
+</html>

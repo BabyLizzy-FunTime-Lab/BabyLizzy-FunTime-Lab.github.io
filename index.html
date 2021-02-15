@@ -1,241 +1,151 @@
-<DOCTYPE html>
-<html lang="en">
-  <head>
-  	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Rit info 304/305.">
-    <meta name="keywords" content="Rit, Informatie, 304, 305">
-  	<link rel="stylesheet" type="text/css" href="public/style/main.css">
-    <link rel="stylesheet" type="text/css" href="public/style/normalize.css">
-    <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-  </head>
-  <body>
-    <!-- <div class="navbar"></div> -->
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<title>Eindopdracht HTML CSS</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="description" content="eindopdracht HTML5 CSS3">
+	<meta name="keywords" content="eindopdracht,HTML5,CSS3">
+</head>
+<body>
+	<header class="header--container">
+		<div class="header--home">
+			<div id="header__logo" class="header__logo">
+				<a href="index.html"><h1>Gitaren</h1></a>
+			</div>
+			<nav class="header__nav pc--nav">
+				<ul class="header__navitems">
+					<li class="active-page"><a href="#top">Home</a></li>
+					<li><a href="#intro" >Intro</a></li>
+					<li id="typenMenuLijst"><a href="">Gitaar Typen</a>
+						<ul>
+							<li><a href="views/solid_body.html">Solid Body</a></li>
+							<li><a href="views/semi_hollow.html">Semi Hollow</a></li>
+							<li><a href="views/hollow_body.html">Hollow Body</a></li>
+						</ul>
+					</li>
+					<li><a href="#media">Media</a></li>
+					<li><a href="views/contact.html">Contact</a></li>				
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<nav class="header__nav mobiel--nav">
+		<ul class="header__navitems">
+			<li class="active-page"><a href="#top">Home</a></li>
+			<li><a href="#intro">Intro</a></li>
+			<li><a href="#media">Media</a></li>
+			<li><a href="views/contact.html">Contact</a></li>
+			<li id="typeSolid"><a href="views/solid_body.html">Solid Body</a></li>
+			<li id="typeSemi"><a href="views/semi_hollow.html">Semi Hollow</a></li>
+			<li id="typeHollow"><a href="views/hollow_body.html">Hollow Body</a></li>		
+		</ul>
+	</nav>
+	<main>
+		<div id="top" class="banner banner-home"></div>
+		<div class="introductie--container">
+			<article id="intro" class="introductie__welkom">
+				<h2>Intro Riff</h2>
+				<p>Hoi allemaal! Welkom tot de wereld van Gitaren. De Gitaar is een van de meest populaire muziek instrumenten ter wereld en de symbool van Rock. Dit website focust zich op de geschiedenis en op de drie basis typen van gitaren namelijk, Solid Body, Semi Hollow en Hollow Body gitaren. Er bestaan meerdere sub-typen en waanzinnige constructies die door extravagante muzikanten zijn gemaakt, maar die worden in dit website nog niet besproken.</p>
 
-    <div class="container-fluid intro">
-      <div class="introMessage">
-        <div id="introMessage-hi">
-          Project Test Site
-        </div>
-        <div id="introMessage-myName">
-          José Rasmussen
-        </div>
-      </div>
-    </div>
+				<h3>Over de Schrijver</h3>
+				<p>Mijn naam is José Rasmussen. Ik studeer deeltijd Web-Development bij de LOI en Gezondheidszorg Technologie op de Hogeschool Rotterdam (tijdelijk op pauze i.v.m. zwangerschap van mijn vrouw). Tevens ben ik dol op gitaar spelen. Ik heb maar 2 jaar ervaring maar mijn motivatie is door de lucht!</p> 
+				<p>Mijn gitaar droom is om ooit in een rock cover band te spelen, gewoon voor de lol. Ik speel voornamelijk rock music uit de jaren 90 en 2000. Mijn favorite Rock genres zijn Grunge, Garage Rock en Hard-Rock.</p>
+			</article>
+			<article class="introductie__gitaargeschiedenis">
+				<h2>In het begin..</h2>
+				<p>Een van de vele voorlopers van de gitaar was de <a href="https://nl.wikipedia.org/wiki/Kithara" target="blank">kithara</a>. Dit snaarinstrument werd gebruikt door de oude Grieken. Ook de <a href="https://nl.wikipedia.org/wiki/Luit" target="blank">luit</a> en de <a href="https://nl.wikipedia.org/wiki/Citer" target="blank">citer</a> zijn voorlopers van de tegenwoordige gitaar. Al deze snaarinstrumenten hebben bijgedragen aan de ontwikkeling van de Spaanse gitaar.</p>
 
-  	<div class="container-fluid about">
-      <div id=about-header><!-- What I do --></div>
-      <div id=about-body>
-        <div id=about-body-healhTech>
-          <!-- As a <b>Student Healthcare Technologist</b> it's my task to form a bridge between technology and healthcare profesionals. Research, innovative thinking, edducating personel on tech use and advising on tech purchases are all in my repertoire. -->   
-        </div>
-        <div id=about-body-webDev>
-         <!--  I got bit by the coding bug working on Arduinos in university. So I decided to become a <b>webdeveloper</b> so I can express my ideas digitaly. JavaScript is cool but I won't stop till I'm writing C# in my sleep. --> 
-        </div>   
-      </div>
-      <div class="clear"></div>  
-    </div>
-    <header class="header--home">
-        <div class="header__logo">
-          
-        </div>
-        <nav class="header__nav">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Gitaren Typen</a>
-              <ul>
-                <li><a href="">Solid Body</a></li>
-                <li><a href="">Semi Hollow</a></li>
-                <li><a href="">Hollow Body</a></li>
-              </ul>
-            </li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </nav>
-    </header>
-    <div class="container-fluid projects">
-      <div id="projects-header">
-        Project Container
-      </div>
-      <div id="projects-body">
-        <header class="site--header" >
-          <h1>
-            PostNL 304/305
-          </h1>
-          <nav>
-            <h2>Menu</h2>
-            <ul>
-              <li><a href="#305">Rit 305</a></li>
-              <li><a href="#304">Rit 304</a></li>
-            </ul>
-          </nav>
-        </header>
-        <article class="rit--container 305" id="305">
-          <header>
-            <h1>Rit 305</h1>
-          </header>
-          <section>
-            <header>
-              <h1>Section: 1</h1>
-            </header>
-            <ul>
-              <li>Wilhelminastraat</li>
-              <li>Prins Bernhardstraat</li>
-              <li>Willemstraat</li>
-              <li>Verlorenkost</li>
-              <li>Beatrixstraat</li>
-              <li>Prins Hendriklaan</li>
-              <li>Irenestraat</li>
-            </ul>
-          </section>
-          <hr>
-          <section>
-            <header>
-              <h1>Section: 2</h1>
-            </header>
-            <ul>
-              <li>Emmastraat</li>
-              <li>Oranjeplein</li>
-              <li>Julianastraat</li>
-              <li>Driesprong</li>
-              <li>Oude Watering</li>
-              <li>Dirk Blaakstraat</li>
-              <li>Christinastraat</li>
-            </ul>
-          </section>
-          <hr>
-          <section>
-            <header>
-              <h1>Section: 3</h1>
-            </header>
-            <ul>
-              <li>Raadhuisstraat</li>
-              <li>Vlasstraat</li>
-              <li>Zwingelstraat</li>
-              <li>Rootstraat</li>
-              <li>Repelstraat</li>
-              <li>Lijnzaadstraat</li>
-            </ul>
-          </section>
-          <hr>
-          <section>
-            <header>
-              <h1>Section: 4</h1>
-            </header>
-            <ul>
-              <li>Sanderswatering</li>
-              <li>Nijverheidstraat</li>
-              <li>Breedstraat</li>
-              <li>Kerkstraat</li>
-              <li>Ring</li>
-              <li>Dorpsstraat</li>
-              <li>Hoofd</li>
-              <li>Achterweg</li>
-              <li>Dam</li>
-            </ul>
-          </section>
-          <hr>
-          <section>
-            <header>
-              <h1>
-                Section: 5<br>
-                <small>Dit zijn dijk wegen.</small>
-              </h1>
-            </header>
-            <ul>
-              <li>Molendijk</li>
-              <li>Aan de IJsbaan</li>
-              <li>Krommedijk</li>
-              <li>Drogendijk</li>
-            </ul>
-          </section>
-          <hr>
-          <section>
-            <header>
-              <h1>Section: 6</h1>
-            </header>
-            <ul>
-              <li>Doctor W. Dreesstraat</li>
-              <li>Doctor H. Colijnstraat</li>
-              <li>Doctor A. Kuyperstraat</li>
-              <li>Jonkheer Meester A.F. de Savornin Lohmanstraat (laag)</li>
-              <li>Meester J.R. Thorbeckestraat</li>
-              <li>Dominee A.S. Talmastraat</li>
-              <li>Meester G. Groen van Prinstererlaan</li>
-              <li>Meester P.J. Oudweg <strong>(Postkantoor)</strong></li>
-            </ul>
-          </section>
-          <hr>
-          <section>
-            <header>
-              <h1>Section: 7</h1>
-            </header>
-            <ul>
-              <li>Ben Goerionstraat</li>
-              <li>Golda Meirstraat</li>
-              <li>Jonkheer Meester A.F. de Savornin Lohmanstraat (hoog)</li>
-              <li>Israellaan</li>
-              <li>Leviestraat</li>
-            </ul>
-          </section>
-          <hr>
-          <section>
-            <header>
-              <h1>Section: 8</h1>
-            </header>
-            <ul>
-              <li>Kerckhoek</li>
-              <li>Kroontje</li>
-              <li>Hoogwerf</li>
-              <li>Gasthuis</li>
-              <li>Meelblok</li>
-              <li>Wethouder P. Woltersstraat</li>
-              <li>Bergroede</li>
-              <li>Jachthoek</li>
-            </ul>
-          </section>
-          <hr>
-          <section>
-            <header>
-              <h1>Section: 9</h1>
-            </header>
-            <ul>
-              <li>Paradijsstraat</li>
-              <li>Sandhil</li>
-              <li>Bloemhofplein</li>
-              <li>Patiostraat</li>
-              <li>Blinckvliet</li>
-              <li>Drenkwaard</li>
-              <li>Weidesingel</li>
-              <li>Westenrijk</li>
-            </ul>
-          </section>
-          <hr>
-          <section>
-            <header>
-              <h1>Section: 10</h1>
-            </header>
-            <ul>
-              <li>Boomgaardstraat</li>
-              <li>Ooftstraat</li>
-              <li>De Schering</li>
-              <li>Weidesingel</li>
-            </ul>
-          </section>
-          <hr>
-          <footer>
-            <header>
-              <h1>Good Luck and have some fun.</h1>
-            </header>
-          </footer>
-        </article>
-        <article class="rit--container 304" id="304">
-          <header>
-            <h1>Rit 304</h1>
-          </header>
-        </article>
-      </div>
-      <div class="clear"></div>    
-    </div>  
-  </body>
-</html>  
+				<h3>De Klassike Gitaar</h3>
+				<p>De gitaar vormde zich door de jaren heen tot het model dat wij vandaag kennen. De luit is wel de duidelijkste voorouder van de akoestische gitaar. Aan het eind van de middeleeuwen nemen de <a href="https://nl.wikipedia.org/wiki/Moren" target="blank">Moren</a> dit instrument mee naar Spanje. Van daaruit veroverde het populaire instrument heel Europa. <a href="https://nl.wikipedia.org/wiki/Antonio_de_Torres" target="blank">Antonio de Torres Jurado</a> , een Spaanse gitaarbouwer, staat bekend als de vader van de klassieke gitaar.</p>
+
+				<p>De gitaar werd het ideale instrument om mee te nemen de straat op. Het is een instrument dat niet duur is en daardoor voor een groot publiek beschikbaar. Het is gemakkelijk te vervoeren en eenvoudig te bespelen.</p> 
+
+				<h3>De Electrische Gitaar</h3>
+				<p>Maar in jazzgroepen had de gitarist het moeilijk. De blazers en piano overstemde vaak het gitaargeluid. Via de microfoon wist hij zich nog enigszins hoorbaar te maken. Op deze manier probeerde de gitarist het geluid te versterken. Het is niet helemaal duidelijk wie de uitvinder van de electrische guitar is. In de jaren 20 en 30 waren er veel mensen die met de concept experimenteerden. De <a href="https://en.wikipedia.org/wiki/Frying_pan_(guitar)" target="blank">Rickenbacker Electro A-22</a> is mogelijk de eerste electrische gitaar die op de markt beschikbaar is gemaakt. Later hebben musikanten zoals <a href="https://nl.wikipedia.org/wiki/Les_Paul" target="blank">Lester William Polsfuss (Les Paul)</a> de electrische gitaar verder ontwikkeld. Deze gitaren hadden een uniek geluid. De elektrische gitaar werd geboren.</p>
+			</article>
+		</div>
+		<section id="media" class="media--container">
+			<header class="media__header">
+				<h2>Media</h2>
+			</header>
+			<div class="fotovideo--container">
+				<picture class="media foto-1">
+					<source media="(min-width: 1024px)" srcset="images/lespaul_1280x867.jpg">
+					<img src="images/lespaul_640x433.jpg" alt="Foto van een les paul Gitaar.">
+				</picture>
+				<video class="media video-1" src="video/foo_fighters_video.mp4" poster="video/poster/guitar3_Art.jpg" controls preload="metadata">
+				</video>
+				<picture class="media foto-2">
+					<source media="(min-width: 1024px)" srcset="images/gretsch_1280x847.jpg">
+					<img src="images/gretsch_640x423.jpg" alt="Foto van een gretsch semi hollow Gitaar.">
+				</picture>
+				<iframe class="media video-2" src="https://www.youtube-nocookie.com/embed/rwhvFLHIlBs" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<picture class="media foto-3">
+					<source media="(min-width: 1024px)" srcset="images/guitars_1280x847.jpg">
+					<img src="images/guitars_640x423.jpg" alt="Foto van Gitaren.">
+				</picture>
+			</div>
+			<div class="fotokaart--container">
+				<div class="fotokaart">
+					<a href="views/solid_body.html">
+						<picture class="fotokaart__foto">
+							<source media="(min-width: 1024px)" srcset="images/solidbody_1280x853.jpg">
+							<img src="images/solidbody_640x426.jpg" alt="Foto van een solid body Gitaar.">
+						</picture>
+					</a>
+					<div class="fotokaart__ondertitel">
+						<h3>Solid Body</h3>
+						<p>Het lichaam van dit soort Gitaren zijn gemaakt uit één stuck massief hout. Soms wordt de nek appart gemaakt en later bevestigd. Deze Gitaren zijn heel populair in de wereld van Rock.</p>
+					</div>
+				</div>
+				<div class="fotokaart">
+					<a href="views/semi_hollow.html">
+						<picture class="fotokaart__foto">
+							<source media="(min-width: 1024px)" srcset="images/semihollow_1280x853.jpg">
+							<img src="images/semihollow_640x426.jpg" alt="Foto van Semi-Hollow Gitaar.">
+						</picture>
+					</a>
+					<div class="fotokaart__ondertitel">
+						<h3>Semi-Hollow Body</h3>
+						<p>Deze Gitaren zijn gemaakt met een kern van massief hout en uitgeholde flanken. Deze Gitaren worden veel gebruikt in Jazz.</p>
+					</div>
+				</div>
+				<div class="fotokaart">
+					<a href="views/hollow_body.html">
+						<picture class="fotokaart__foto">
+							<source media="(min-width: 1024px)" srcset="images/hollowbody_1280x853.jpg">
+							<img src="images/hollowbody_640x426.jpg" alt="Foto van Semi-Hollow Gitaar.">
+						</picture>
+					</a>
+					<div class="fotokaart__ondertitel">
+						<h3>Hollow Body</h3>
+						<p>De Hollow Body Gitaren, ook bekend als acoustische Gitaren, hebben dus een totaal uitgeholde resonantiekamer. Dit soort Gitaar wordt veel gebruikt in bijvoorbeeld Folk en Pop muziek.</p>
+					</div>
+				</div>
+			</div>
+		</section>		
+	</main>
+	<footer class="footer--container">
+		<div class="footer__bericht">
+			<div class="footer__tekst">
+				<h2>Bedankt voor uw bezoek!!</h2>
+				<p>
+					Bekijk graag ook de andere paginas. Er gaat nog veel meer Gitaar info bij komen. Mijn facebook pagina is nog niet beschikbaar.
+				</p>
+			</div>
+			<div class="footer__icons">
+				<h3>Volg mij op:</h3>
+				<a class="footer__facebook" href="https://www.facebook.com/" target="blank"></a>
+				<a class="footer__linkedin" href="https://www.linkedin.com/in/jos%C3%A9-luis-rasmussen-garcia/" target="blank"></a>
+				<a class="footer__youtube" href="https://www.youtube.com/user/darthporkius/" target="blank"></a>
+			</div>
+		</div>
+		<div class="footer__beeld"></div>
+	</footer>
+</body>
+</html>
