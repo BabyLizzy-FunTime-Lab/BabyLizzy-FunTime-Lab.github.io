@@ -21,7 +21,7 @@
 				<ul class="header__navitems">
 					<li class="active-page"><a href="#top">Home</a></li>
 					<li><a href="#intro" >Intro</a></li>
-					<li id="typenMenuLijst"><a href="">Gitaar Typen</a>
+					<li id="typenMenuLijst"><a href="#gitaar-typen">Gitaar Typen</a>
 						<ul>
 							<li><a href="views/solid_body.html">Solid Body</a></li>
 							<li><a href="views/semi_hollow.html">Semi Hollow</a></li>
@@ -74,61 +74,57 @@
 				<h2>Media</h2>
 			</header>
 			<div class="fotovideo--container">
-				<picture class="media foto-1">
-					<source media="(min-width: 1024px)" srcset="images/lespaul_1280x867.jpg">
-					<img src="images/lespaul_640x433.jpg" alt="Foto van een les paul Gitaar.">
-				</picture>
-				<video class="media video-1" src="video/foo_fighters_video.mp4" poster="video/poster/guitar3_Art.jpg" controls preload="metadata">
+				<video class="media video-1" src="video/foo_fighters_video.mp4"
+                       poster="video/poster/guitar3_Art.jpg" controls preload="metadata">
 				</video>
-				<picture class="media foto-2">
-					<source media="(min-width: 1024px)" srcset="images/gretsch_1280x847.jpg">
-					<img src="images/gretsch_640x423.jpg" alt="Foto van een gretsch semi hollow Gitaar.">
-				</picture>
-				<iframe class="media video-2" src="https://www.youtube-nocookie.com/embed/rwhvFLHIlBs" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<picture class="media foto-3">
-					<source media="(min-width: 1024px)" srcset="images/guitars_1280x847.jpg">
-					<img src="images/guitars_640x423.jpg" alt="Foto van Gitaren.">
-				</picture>
+				<iframe class="media video-2" src="https://www.youtube-nocookie.com/embed/rwhvFLHIlBs"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
 			</div>
-			<div class="fotokaart--container">
-				<div class="fotokaart">
-					<a href="views/solid_body.html">
-						<picture class="fotokaart__foto">
-							<source media="(min-width: 1024px)" srcset="images/solidbody_1280x853.jpg">
-							<img src="images/solidbody_640x426.jpg" alt="Foto van een solid body Gitaar.">
-						</picture>
-					</a>
-					<div class="fotokaart__ondertitel">
-						<h3>Solid Body</h3>
-						<p>Het lichaam van dit soort Gitaren zijn gemaakt uit één stuck massief hout. Soms wordt de nek appart gemaakt en later bevestigd. Deze Gitaren zijn heel populair in de wereld van Rock.</p>
-					</div>
-				</div>
-				<div class="fotokaart">
-					<a href="views/semi_hollow.html">
-						<picture class="fotokaart__foto">
-							<source media="(min-width: 1024px)" srcset="images/semihollow_1280x853.jpg">
-							<img src="images/semihollow_640x426.jpg" alt="Foto van Semi-Hollow Gitaar.">
-						</picture>
-					</a>
-					<div class="fotokaart__ondertitel">
-						<h3>Semi-Hollow Body</h3>
-						<p>Deze Gitaren zijn gemaakt met een kern van massief hout en uitgeholde flanken. Deze Gitaren worden veel gebruikt in Jazz.</p>
-					</div>
-				</div>
-				<div class="fotokaart">
-					<a href="views/hollow_body.html">
-						<picture class="fotokaart__foto">
-							<source media="(min-width: 1024px)" srcset="images/hollowbody_1280x853.jpg">
-							<img src="images/hollowbody_640x426.jpg" alt="Foto van Semi-Hollow Gitaar.">
-						</picture>
-					</a>
-					<div class="fotokaart__ondertitel">
-						<h3>Hollow Body</h3>
-						<p>De Hollow Body Gitaren, ook bekend als acoustische Gitaren, hebben dus een totaal uitgeholde resonantiekamer. Dit soort Gitaar wordt veel gebruikt in bijvoorbeeld Folk en Pop muziek.</p>
-					</div>
-				</div>
-			</div>
-		</section>		
+        </section>
+        <section id="gitaar-typen" class="media--container">
+            <header >
+                <h2>Gitaar Typen</h2>
+            </header>
+            <div class="fotokaart--container">
+                <div class="fotokaart">
+                    <a href="views/solid_body.html">
+                        <picture class="fotokaart__foto">
+                            <source media="(min-width: 1024px)" srcset="images/solidbody_1280x853.jpg">
+                            <img src="images/solidbody_640x426.jpg" alt="Foto van een solid body Gitaar.">
+                        </picture>
+                    </a>
+                    <div class="fotokaart__ondertitel">
+                        <h3>Solid Body</h3>
+                        <p>Het lichaam van dit soort Gitaren zijn gemaakt uit één stuck massief hout. Soms wordt de nek appart gemaakt en later bevestigd. Deze Gitaren zijn heel populair in de wereld van Rock.</p>
+                    </div>
+                </div>
+                <div class="fotokaart">
+                    <a href="views/semi_hollow.html">
+                        <picture class="fotokaart__foto">
+                            <source media="(min-width: 1024px)" srcset="images/semihollow_1280x853.jpg">
+                            <img src="images/semihollow_640x426.jpg" alt="Foto van Semi-Hollow Gitaar.">
+                        </picture>
+                    </a>
+                    <div class="fotokaart__ondertitel">
+                        <h3>Semi-Hollow Body</h3>
+                        <p>Deze Gitaren zijn gemaakt met een kern van massief hout en uitgeholde flanken. Deze Gitaren worden veel gebruikt in Jazz.</p>
+                    </div>
+                </div>
+                <div class="fotokaart">
+                    <a href="views/hollow_body.html">
+                        <picture class="fotokaart__foto">
+                            <source media="(min-width: 1024px)" srcset="images/hollowbody_1280x853.jpg">
+                            <img src="images/hollowbody_640x426.jpg" alt="Foto van Semi-Hollow Gitaar.">
+                        </picture>
+                    </a>
+                    <div class="fotokaart__ondertitel">
+                        <h3>Hollow Body</h3>
+                        <p>De Hollow Body Gitaren, ook bekend als acoustische Gitaren, hebben dus een totaal uitgeholde resonantiekamer. Dit soort Gitaar wordt veel gebruikt in bijvoorbeeld Folk en Pop muziek.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 	</main>
 	<footer class="footer--container">
 		<div class="footer__bericht">

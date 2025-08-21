@@ -167,7 +167,7 @@ Hierdoor heb ik de dropdown menu uitgeschakeld op mobiel.*/
 	}
 	.header--home {
 		display: flex;
-		flex-flow: row, wrap;
+		flex-flow: row wrap;
 		max-width: 80%;
 		margin: auto;
 		padding: 1em 0 2em 0;
@@ -197,10 +197,10 @@ Hierdoor heb ik de dropdown menu uitgeschakeld op mobiel.*/
 	}
 	.header--home {
 		display: flex;
-		flex-flow: row, wrap;
+		flex-flow: row wrap;
 		max-width: 80%;
 		margin: auto;
-		padding: 0em 0 0em 0;
+		padding: 0 0 0 0;
 		justify-content: space-between;
 	}
 	.header__logo {
@@ -249,7 +249,7 @@ main a:hover {
 	display: flex;
 	flex-flow: column;
 	background-color: var(--kleur-whitesmoke);
-	padding: 0em .7em 0 .7em;
+	padding: 0 .7em 0 .7em;
 	margin-bottom: 1em;
 }
 .introductie--container article h2 {
@@ -262,6 +262,9 @@ main a:hover {
 	font-size: 1em;
 	margin: .5em 0 .3em 0;
 }
+.introductie--container article {
+    margin-bottom: 2em;
+}
 .introductie--container article p {
 	font-family: 'Roboto' , sans-serif;
 	margin: .3em 0 .4em 0;
@@ -269,7 +272,7 @@ main a:hover {
 }
 .media--container {
 	display: flow-root;
-	padding: 0em .7em 0 .7em;
+	padding: 0 .7em 0 .7em;
 	margin-bottom: 1em;
 }
 .media__header {
@@ -282,43 +285,47 @@ main a:hover {
 	margin: 0;
 }
 .fotovideo--container {
-	display: flex;
-	flex-wrap: wrap;
-	padding: .5em 0 2em 0;
 	border-bottom: 2px solid var(--kleur-lichtgrijs);
+    display: grid;
+    grid-column-gap: 1em;
+    grid-row-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(19em, 1fr));
+    justify-items: center;
+    padding-bottom: 4em;
+    padding-top: 2em;
 }
 .media {
 	height: 13em;
 	width: 20em;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
+    border: 15px solid var(--kleur-whitesmoke);
+    box-shadow: 0 8px 16px 0 var(--kleur-schaduw);
 	margin: 0 auto .5em auto;
-	display: flow-root;
+    box-sizing: border-box;
 }
-.media img {
-	height: inherit;
-	width: inherit;
-	object-fit: cover;
-}
+/*}*/
 .video-1 {
 	background-color: black;
 }
 /*fotokaarten*/
 .fotokaart--container {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 3em 0 3em 0;
+    display: grid;
+    grid-column-gap: 1em;
+    grid-row-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(19em, 1fr));
+    justify-items: center;
+	padding: 2em 0 4em 0;
 }
 .fotokaart {
-	height: 19em;
-	max-width: 18em;
+	height: 22em;
+    width: 19em;
 	border: 1px solid var(--kleur-whitesmoke);
-	margin: 0 auto .6em auto;
 	padding: 1em;
 	box-shadow: 0 4px 8px 0 var(--kleur-schaduw);
 	background-color: var(--kleur-snow);
+    box-sizing: border-box;
 }
 .fotokaart__foto {
-	display: flow-root;
 	height: calc(19em * 0.65);
 }
 .fotokaart__foto img {
@@ -351,9 +358,8 @@ main a:hover {
 
 }
 .footer__bericht {
-	flex: 2 1 0%;
+	flex: 2 1 0;
 	padding: 0 .7em 0 .7em;
-	/*max-width: 19em;*/
 	display: flex;
 	flex-flow: column;
 }
@@ -369,14 +375,14 @@ main a:hover {
 	text-align: justify;
 }
 .footer__tekst {
-	flex: 2 1 0%;
+	flex: 2 1 0;
 	max-width: 19em;
 }
 .footer__icons {
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 19em;
-	flex: 1 1 0%;
+	flex: 1 1 0;
 	padding-bottom: .3em;
 }
 .footer__icons h3 {
@@ -384,12 +390,12 @@ main a:hover {
 	display: block;
 	font-size: .8em;
 	margin: 0 0 0 0;
-	flex: 2 1 0%;
+	flex: 2 1 0;
 	line-height: 3;
 }
 .footer__icons a {
 	display: block;
-	flex: 1 1 0%;
+	flex: 1 1 0;
 	background-size: cover;
 	background-position: center;
 }
@@ -403,7 +409,7 @@ main a:hover {
 	background-image: var(--footer-icon-youtube);
 }
 .footer__beeld {
-	flex: 1 1 0%;
+	flex: 1 1 0;
 	background-image: var( --footer-background );
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -576,24 +582,10 @@ main a:hover {
 }
 /*//////////////////////////////////////////////////////
 ///////////////contacts//////////////////////////////*/
-.maps--container {
-	display: flow-root;
-}
-.maps__titel h2 {
-	margin: 0;
-	padding: 2em .5em .2em .5em;
-}
-.maps__titel p {
-	margin: 0;
-	padding: 0 .7em .5em .7em;
-}
-.maps__kaart {
-	height: calc(100vh - 13em);
-}
 .formulier--container {
 	display: flow-root;
 	max-width: 90%;
-	margin: auto;
+    margin: 5em auto 5em auto;
 	padding: .5em .5em 1.5em .5em;
 }
 .formulier__titel h2 {
@@ -654,41 +646,29 @@ main a:hover {
 
 /*///////////////////////////////////////////////////////////
 ////////////////// 320px scherm en groter op pc ////////////////*/
-@media screen
-	and (min-width: 320px) 
-	and (-webkit-max-device-pixel-ratio: 1) {
-	.fotovideo--container {
-		justify-content: space-around;
-	}
-	.media {
-		height: calc(18em / 1.5);
-		width: 18em;
-		flex: 0 0 auto;
-	}
-}
+/*@media screen*/
+/*	and (min-width: 320px) */
+/*	and (-webkit-max-device-pixel-ratio: 1) {*/
+/*	.fotovideo--container {*/
+/*		justify-content: space-around;*/
+/*	}*/
+/*}*/
 /*///////////////////////////////////////////////////////////
 ////////////////// 640px scherm en groter ////////////////*/
 @media screen
 	and (min-width: 640px) {
-	.fotovideo--container, .fotokaart--container {
-		justify-content: space-around;
-	}
-	.fotovideo--container {
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-	}
-	.media {
-		height: calc(18em / 1.5);
-		width: 18em;
-		flex: 0 0 auto;
-	}
-	.fotokaart {
-		min-height: 14em;
-		max-height: 19em
-		min-width: 13em;
-		max-width: 18em;
-		flex: 1 1 auto;
-	}
+	/*.fotovideo--container, .fotokaart--container {*/
+	/*	justify-content: space-around;*/
+	/*}*/
+	/*.fotovideo--container {*/
+	/*	flex-wrap: wrap;*/
+	/*	justify-content: space-evenly;*/
+	/*}*/
+	/*.media {*/
+	/*	height: calc(18em / 1.5);*/
+	/*	width: 18em;*/
+	/*	flex: 0 0 auto;*/
+	/*}*/
 }
 /*///////////////////////////////////////////////////////////
 ////////////////// 1024px scherm en groter ////////////////*/
@@ -715,22 +695,6 @@ main a:hover {
 	.fotovideo--container {
 		flex-wrap: nowrap;
 		justify-content: space-between;
-	}
-	.media {
-		height: calc((80vw / 5 - 1em) / 1.5);
-		width: calc((80vw / 5) - 1em);
-		flex: 0 1 auto;
-	}
-	.fotokaart--container {
-		flex-wrap: nowrap;
-		justify-content: space-around;
-	}
-	.fotokaart {
-		min-height: 14em;
-		max-height: 19em
-		min-width: 13em;
-		max-width: 18em;
-		flex: 1 1 auto;
 	}
 	.footer--container {
 		padding: 0 10% 0 10%;
