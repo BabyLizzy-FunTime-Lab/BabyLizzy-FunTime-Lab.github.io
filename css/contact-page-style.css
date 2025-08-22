@@ -1,0 +1,63 @@
+/*//////////////////////////////////////////////////////
+///////////////contact//////////////////////////////*/
+.formulier--container {
+    display: flow-root;
+    max-width: 90%;
+    margin: 5em auto 5em auto;
+    padding: .5em .5em 1.5em .5em;
+}
+.formulier__titel h2 {
+    margin: 0;
+    padding: .5em 0 .2em 0;
+}
+.formulier__titel p {
+    margin: 0;
+    padding: 0 0 .5em 0;
+}
+.formulier__velden button {
+    font-weight: 700;
+    padding: .5em;
+    margin: 0 25% 0 025%;
+    width: 50%;
+    background-color: var(--kleur-schaduw);
+    border: 2px solid var(--kleur-lichtgrijs);
+}
+.formulier__velden button:hover {
+    color: var(--kleur-snow);
+    background-color: var(--kleur-lichtzwart);
+    border: 2px solid var(--kleur-menu-highlight);
+    box-sizing: border-box;
+}
+.formulier__velden label {
+    display: block;
+    font-weight: 500;
+}
+.formulier__velden input, .formulier__velden textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid var(--kleur-lichtgrijs);
+}
+.formulier__velden > div {
+    display: flow-root;
+    width: 100%;
+    padding-bottom: .5em;
+}
+@media screen
+and (min-width: 700px) {
+    .formulier--container {
+        max-width: 70%;
+    }
+}
+@media screen
+and (min-width: 1024px) {
+    .formulier--container {
+        width: 40em;
+    }
+}
+@media screen
+and (min-width: 700px)
+and (orientation: landscape) {
+    .formulier--container {
+        max-width: 60%;
+    }
+}

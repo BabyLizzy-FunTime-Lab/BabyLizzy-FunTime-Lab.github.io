@@ -1,0 +1,163 @@
+/*////////////////////////////////////////////////////////
+////////////////////gitaar pages//////////////////////*/
+.banner--gitaarpaginas {
+    height: calc(60vh - 5em);
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.fotokaart--gitaarpaginas--container {
+    padding-top: 0;
+}
+.geschiedenis {
+    padding: 0 .7em 0 .7em;
+}
+.geschiedenis header h2 {
+    margin: .5em 0 .2em 0;
+}
+.geschiedenis header p {
+    margin: 0;
+}
+.geschiedenis > h3 {
+    margin: 0;
+    padding: 2em 0 1em 0;
+}
+@media screen
+and (orientation: landscape) {
+    .banner--gitaarpaginas {
+        height: calc(70vh - 5em);
+        padding-top: 2em;
+    }
+}
+@media screen
+and (min-width: 1024px) {
+    .geschiedenis {
+        max-width: 80%;
+        margin: auto;
+    }
+}
+/*//////////////////////////////////////////////////////
+///////////////hollow_body//////////////////////////////*/
+.banner--hollowbody {
+    animation-name: bannerhollowbody;
+    background-image: var( --banner-hollowbody-min640 );
+}
+@media screen
+and (min-width: 800px) {
+    .banner--hollowbody {
+        animation-name: bannerhollowbody-1280;
+        background-image: var( --banner-hollowbody-min1280 );
+    }
+}
+@keyframes bannerhollowbody {
+    0% {
+        background-image: var(--banner-hollowbody-min640);
+    }
+    25% {
+        background-image: var(--banner-hollowbody-min640);
+    }
+    50% {
+        background-image: var(--banner-hollowbody-2-min640);
+    }
+    100% {
+        background-image: var(--banner-hollowbody-2-min640);
+    }
+}
+@keyframes bannerhollowbody-1280 {
+    0% {
+        background-image: var(--banner-hollowbody-min1280);
+    }
+    25% {
+        background-image: var(--banner-hollowbody-min1280);
+    }
+    50% {
+        background-image: var(--banner-hollowbody-2-min1280);
+    }
+    100% {
+        background-image: var(--banner-hollowbody-2-min1280);
+    }
+}
+/*//////////////////////////////////////////////////////
+///////////////semi_hollow//////////////////////////////*/
+.banner--semihollow {
+    animation-name: banner-semihollow;
+    background-position: 70% 30%;
+    background-image: var( --banner-semihollow-min640 );
+}
+@media screen
+and (min-width: 800px) {
+    .banner--semihollow {
+        animation-name: banner-semihollow-1280;
+        background-image: var( --banner-semihollow-min1280 );
+    }
+}
+@keyframes banner-semihollow {
+    0% {
+        background-image: var(--banner-semihollow-min640);
+    }
+    25% {
+        background-image: var(--banner-semihollow-min640);
+    }
+    50% {
+        background-image: var(--banner-semihollow-2-min640);
+    }
+    100% {
+        background-image: var(--banner-semihollow-2-min640);
+    }
+}
+@keyframes banner-semihollow-1280 {
+    0% {
+        background-image: var(--banner-semihollow-min1280);
+    }
+    25% {
+        background-image: var(--banner-semihollow-min1280);
+    }
+    50% {
+        background-image: var(--banner-semihollow-2-min1280);
+    }
+    100% {
+        background-image: var(--banner-semihollow-2-min1280);
+    }
+}
+/*//////////////////////////////////////////////////////
+///////////////solid_body//////////////////////////////*/
+.banner--solidbody {
+    animation-name: banner-solidbody;
+    background-position: 50% 60%;
+    background-image: var( --banner-solidbody-min640 );
+}
+@media screen
+and (min-width: 800px) {
+    .banner--solidbody {
+        animation-name: banner-solidbody-1280;
+    }
+}
+@keyframes banner-solidbody {
+    0% {
+        background-image: var(--banner-solidbody-min640);
+    }
+    25% {
+        background-image: var(--banner-solidbody-min640);
+    }
+    50% {
+        background-image: var(--banner-solidbody-2-min640);
+    }
+    100% {
+        background-image: var(--banner-solidbody-2-min640);
+    }
+}
+@keyframes banner-solidbody-1280 {
+    0% {
+        background-image: var(--banner-solidbody-min1280);
+    }
+    25% {
+        background-image: var(--banner-solidbody-min1280);
+    }
+    50% {
+        background-image: var(--banner-solidbody-2-min1280);
+    }
+    100% {
+        background-image: var(--banner-solidbody-2-min1280);
+    }
+}
