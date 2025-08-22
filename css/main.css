@@ -12,6 +12,7 @@
 
 	/*Decoratiebeelden*/
 	--logo-horns-min640: url(../images/logo/horns_426x640.png);
+    --section-background: url(../images/space-invader.png);
 	--banner-home-min320: url(../images/strats_640x425.jpg);
 	--banner-home-min1280: url(../images/strats_1280x851.jpg);
 	--banner-home-min1920: url(../images/strats_1920x1276.jpg);
@@ -121,7 +122,6 @@ p, form {
 	display: none;
 	background-color: var( --kleur-snow );
 }
-
 .header__nav a {
 	display: block;
 	text-decoration: none;
@@ -274,6 +274,10 @@ main a:hover {
 	display: flow-root;
 	padding: 0 .7em 0 .7em;
 	margin-bottom: 1em;
+    background-image: var(--section-background);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
 }
 .section__header {
 	padding: 1em 0 .3em 0;
@@ -671,3 +675,12 @@ main a:hover {
 	}
 }
 
+@media screen and  (max-width: 800px) {
+    .section--container {
+        min-height: calc(100vh - 5em);
+    }
+    .fotovideo--container {
+        min-height: calc(100vh - 5em);
+        align-content: space-between;
+    }
+}
