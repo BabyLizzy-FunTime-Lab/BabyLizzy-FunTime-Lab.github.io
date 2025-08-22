@@ -243,7 +243,7 @@ main a:hover {
 .banner-home {
 	height: calc(100vh - 5em);
 	background-image: var( --banner-home-min1280 );
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 }
 .introductie--container {
 	display: flex;
@@ -270,22 +270,22 @@ main a:hover {
 	margin: .3em 0 .4em 0;
 	text-align: justify;
 }
-.media--container {
+.section--container {
 	display: flow-root;
 	padding: 0 .7em 0 .7em;
 	margin-bottom: 1em;
 }
-.media__header {
+.section__header {
 	padding: 1em 0 .3em 0;
 	border-top: 2px solid var(--kleur-lichtgrijs);
+    text-align: center;
 }
-.media__header h2 {
+.section__header h2 {
 	font-family: 'Orbitron', sans-serif;
 	font-size: 1.3em;
 	margin: 0;
 }
 .fotovideo--container {
-	border-bottom: 2px solid var(--kleur-lichtgrijs);
     display: grid;
     grid-column-gap: 1em;
     grid-row-gap: 2em;
@@ -293,11 +293,11 @@ main a:hover {
     justify-items: center;
     padding-bottom: 4em;
     padding-top: 2em;
+    box-sizing: border-box;
 }
 .media {
 	height: 13em;
 	width: 20em;
-	/*border: 1px solid black;*/
     border: 15px solid var(--kleur-whitesmoke);
     box-shadow: 0 8px 16px 0 var(--kleur-schaduw);
 	margin: 0 auto .5em auto;
@@ -643,33 +643,6 @@ main a:hover {
 		max-width: 60%;
 	}
 }
-
-/*///////////////////////////////////////////////////////////
-////////////////// 320px scherm en groter op pc ////////////////*/
-/*@media screen*/
-/*	and (min-width: 320px) */
-/*	and (-webkit-max-device-pixel-ratio: 1) {*/
-/*	.fotovideo--container {*/
-/*		justify-content: space-around;*/
-/*	}*/
-/*}*/
-/*///////////////////////////////////////////////////////////
-////////////////// 640px scherm en groter ////////////////*/
-@media screen
-	and (min-width: 640px) {
-	/*.fotovideo--container, .fotokaart--container {*/
-	/*	justify-content: space-around;*/
-	/*}*/
-	/*.fotovideo--container {*/
-	/*	flex-wrap: wrap;*/
-	/*	justify-content: space-evenly;*/
-	/*}*/
-	/*.media {*/
-	/*	height: calc(18em / 1.5);*/
-	/*	width: 18em;*/
-	/*	flex: 0 0 auto;*/
-	/*}*/
-}
 /*///////////////////////////////////////////////////////////
 ////////////////// 1024px scherm en groter ////////////////*/
 @media screen 
@@ -691,10 +664,6 @@ main a:hover {
 	}
 	.introductie__welkom, .introductie__gitaargeschiedenis {
 		flex: 1 1 50%;
-	}
-	.fotovideo--container {
-		flex-wrap: nowrap;
-		justify-content: space-between;
 	}
 	.footer--container {
 		padding: 0 10% 0 10%;
