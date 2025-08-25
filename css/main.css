@@ -9,6 +9,8 @@
 	--kleur-gainsboro: rgb(220,220,220);
 	--kleur-lichtzwart: hsl(0, 0%, 15%);
 	--kleur-lichtgrijs: rgb(112, 112, 110);
+    --kleur-body-background: rgb(0, 0, 0);
+    --kleur-video-background: rgb(0, 0, 0);
 
 	/*Decoratiebeelden*/
 	--logo-horns-min640: url(../images/logo/horns_426x640.png);
@@ -39,7 +41,7 @@
 html, body {
 	scroll-behavior: smooth;
 	scroll-padding-top: 5em;
-	background-color: black;
+	background-color: var(--kleur-body-background);
 }
 h2, h3, button {
 	font-family: 'Orbitron', sans-serif;
@@ -135,7 +137,7 @@ main a:hover {
 }
 /*}*/
 .video-1 {
-	background-color: black;
+	background-color: var(--kleur-video-background);
 }
 /*fotokaarten*/
 .fotokaart--container {
